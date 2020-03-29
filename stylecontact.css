@@ -10,10 +10,10 @@ header
     top: -2px;
     z-index: 1;
     padding: 15px;
-    border: 1px solid white;
-    background-color: #4cf739;
+    background-color: #00fc50;
     text-align: center;
     width: 100%;
+    box-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
 }
 
 body
@@ -31,6 +31,7 @@ body
 	border-radius: 2px;
 	border: orange;
 	color: #000;
+	filter: none;
 }
 
 .fa-facebook
@@ -75,7 +76,7 @@ body
 	/*transform: translate(-50%,-50%);*/
 	font-size: 6em;
 	color: #fff;
-	text-shadow: 0 0 20px #07f04d;
+	text-shadow: 0 0 30px #07f04d;
 }
 
 .h1:after
@@ -119,23 +120,6 @@ body
 	margin-top: -80px;
 	float: right;
 	margin-right: 100px;
-}
-
-#menu-btn, #close-btn
-{
-	font-size: 30px;
-	margin: 10px;
-	color: #a641f2;
-	display: none;
-}
-
-.slider
-{
-	margin-bottom: 10px;
-	width: 90%;
-	margin-left: 5%;
-	padding: 0 5px;
-	transition: 2s;
 }
 
 .btn
@@ -257,13 +241,13 @@ body
 
 	.fa-instagram, .fa-linkedin, .fa-twitter
 	{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-left: 25px;
 	}
 
 	.fa-facebook
 	{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-left: 25px;
 	}
 
@@ -271,16 +255,88 @@ body
 	{
 		width: 34%;
 		z-index: 20;
-		top: 400px;
+		top: 300px;
 		position: absolute;
 		font-size: 12px;
 	}
+	
+	
+}
 
-	.slider
-	{
-		width: 100%;
-		margin-left: 0;
-	}
+.contact
+{
+	font-size: 24px;
+	display: block;
+	width: 50%;
+	margin-left: 400px;
+	margin-top: 450px;
+	color: #fff;
+	background: #00fc50;
+	box-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
+	transition-delay: 1s;
+	text-align: center;
+}
 
+.links ul
+{
+	margin-top: 50px;
+	margin-left: 450px;
+	display: block;
+	font-size: 24px;
+	text-decoration: none;
+	margin-bottom: 50px;
+}
 
+.links ul li a
+{
+	position: relative;
+	display: inline-block;
+	padding: 40px;
+	color: #fff;
+	text-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
+	text-decoration: none;
+}
+
+.fa-phone
+{
+	margin-right: 20px;
+	text-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
+	color: #fff;
+}
+
+.fa-envelope-o
+{
+	margin-right: 20px;
+	text-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
+	color: #fff;
+}
+
+.links ul li a:hover
+{
+	font-size: 26px;
+	transition: 0.5s
+}
+
+.links ul li p
+{
+	position: relative;
+	display: inline-block;
+	padding: 40px;
+	color: #fff;
+	text-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
+	word-spacing: 5px;
+}
+
+.links ul li p:hover
+{
+	font-size: 26px;
+	transition: 0.5s
+}
+
+.fa-map-marker
+{
+	padding-right: 10px;
+	margin-right: 30px;
+	text-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
+	color: #fff;
 }

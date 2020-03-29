@@ -10,10 +10,10 @@ header
     top: -2px;
     z-index: 1;
     padding: 15px;
-    border: 1px solid white;
-    background-color: #4cf739;
+    background-color: #00fc50;
     text-align: center;
     width: 100%;
+    box-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
 }
 
 body
@@ -31,6 +31,7 @@ body
 	border-radius: 2px;
 	border: orange;
 	color: #000;
+	filter: none;
 }
 
 .fa-facebook
@@ -75,7 +76,7 @@ body
 	/*transform: translate(-50%,-50%);*/
 	font-size: 6em;
 	color: #fff;
-	text-shadow: 0 0 20px #07f04d;
+	text-shadow: 0 0 30px #07f04d;
 }
 
 .h1:after
@@ -121,22 +122,7 @@ body
 	margin-right: 100px;
 }
 
-#menu-btn, #close-btn
-{
-	font-size: 30px;
-	margin: 10px;
-	color: #a641f2;
-	display: none;
-}
 
-.slider
-{
-	margin-bottom: 10px;
-	width: 90%;
-	margin-left: 5%;
-	padding: 0 5px;
-	transition: 2s;
-}
 
 .btn
 {
@@ -257,13 +243,13 @@ body
 
 	.fa-instagram, .fa-linkedin, .fa-twitter
 	{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-left: 25px;
 	}
 
 	.fa-facebook
 	{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-left: 25px;
 	}
 
@@ -271,16 +257,34 @@ body
 	{
 		width: 34%;
 		z-index: 20;
-		top: 400px;
+		top: 300px;
 		position: absolute;
 		font-size: 12px;
 	}
 
-	.slider
+	.gallery img
 	{
-		width: 100%;
-		margin-left: 0;
+		top: 100px;
 	}
+}
 
+.gallery
+{
+	margin-top: 500px;
+	margin-left: 200px;
+	width: 80%;
+}
 
+.gallery img
+{
+	
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+}
+
+.gallery img:hover
+{
+	filter: grayscale(100%);
+	transform: scale(1.1);
 }
