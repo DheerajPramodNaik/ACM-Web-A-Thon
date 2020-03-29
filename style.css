@@ -1,0 +1,316 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.image
+{
+	margin-left: 20%;
+	height: 200px;
+	margin-top: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.logo
+{
+	margin-left: 35%;
+	height: 200px;
+	margin-top: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+header
+{
+    position: static;
+    top: -2px;
+    z-index: 1;
+    padding: 15px;
+    border: 1px solid white;
+    background-color: #4cf739;
+    text-align: center;
+    width: 100%;
+}
+
+body
+{
+	background-image: url(images/bg3.jpg);
+}
+
+.fa-instagram, .fa-linkedin, .fa-twitter
+{
+	margin-right: 100px;
+	margin-left: 50px;
+	background: #fff;
+	display: flex;
+	padding: 10px 11px;
+	border-radius: 2px;
+	border: orange;
+	color: #000;
+}
+
+.fa-facebook
+{
+	margin-right: 100px;
+	margin-left: 50px;
+	background: #fff;
+	display: flex;
+	padding: 10px 14px;
+	border-radius: 2px;
+	color: #000;
+}
+
+.fa-instagram:hover
+{
+	background-image: linear-gradient(20deg,#e0eb1e,#7629e3,#e51af0);
+	color: #fff;
+}
+
+.fa-facebook:hover
+{
+	background-color: #036bfc;
+	color: #fff;
+}
+
+.fa-twitter:hover
+{
+	background-color: #03a9fc;
+	color: #fff;
+}
+
+.fa-linkedin:hover
+{
+	background-color: #0380fc;
+	color: #fff;
+}
+
+.h1
+{
+	margin-top: 30px;
+	text-align: center;
+	/*transform: translate(-50%,-50%);*/
+	font-size: 6em;
+	color: #fff;
+	text-shadow: 0 0 20px #07f04d;
+}
+
+.h1:after
+{
+	content: attr(data-text);
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 0 20px;
+	position: absolute;
+	color: #07f04d;
+	filter: blur(15px);
+}
+
+.h1:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	width: 100%;
+	height: 100%;
+	background: #07f04d;
+	z-index: -2;
+	opacity: 0;
+	filter: blur(40px);
+}
+
+.img1
+{
+	height: 150px;
+	margin-top: -80px;
+	float: left;
+	margin-left: 100px;
+}
+
+.img2
+{
+	height: 150px;
+	margin-top: -80px;
+	float: right;
+	margin-right: 100px;
+}
+
+#menu-btn, #close-btn
+{
+	font-size: 30px;
+	margin: 10px;
+	color: #a641f2;
+	display: none;
+}
+
+.slider
+{
+	margin-bottom: 10px;
+	width: 90%;
+	margin-left: 5%;
+	padding: 0 5px;
+	transition: 2s;
+}
+
+.btn
+{
+	width: 100%;
+	height: 57px;
+}
+
+.btn ul li a
+{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	color: #2196f3;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.btn ul li a:hover
+{
+	color: #255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	transition-delay: 1s;
+}
+
+.btn ul li a span
+{
+	position: absolute;
+	display: block;
+}
+
+.btn ul li a span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+.btn ul li a:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 1s;
+}
+
+.btn ul li a span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+.btn ul li a:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+
+.btn ul li a span:nth-child(2)
+{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+.btn ul li a:hover span:nth-child(2)
+{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+.btn ul li a span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+.btn ul li a:hover span:nth-child(4)
+{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+
+@media only screen and (max-width: 980px)
+{
+	.h1
+	{
+		margin-top: -10px;
+		text-align: center;
+	}
+
+	.img1
+	{
+		height: 100px;
+		margin-left: 50px;
+	}
+
+	.img2
+	{
+		height: 100px;
+		margin-right: 50px;
+	}
+
+	.fa-instagram, .fa-linkedin, .fa-twitter
+	{
+		margin-right: 50px;
+		margin-left: 25px;
+	}
+
+	.fa-facebook
+	{
+		margin-right: 50px;
+		margin-left: 25px;
+	}
+
+	.btn
+	{
+		width: 34%;
+		z-index: 20;
+		top: 300px;
+		position: fixed;
+		font-size: 12px;
+		display: none;
+	}
+
+	.btn ul li
+	{
+	
+	}
+
+	
+	#menu-btn
+	{
+		display: inline-block;
+	}
+
+	.slider
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+
+
+}
