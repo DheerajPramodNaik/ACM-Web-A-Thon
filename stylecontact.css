@@ -255,7 +255,7 @@ body
 	{
 		width: 34%;
 		z-index: 20;
-		top: 300px;
+		top: 200px;
 		position: absolute;
 		font-size: 12px;
 	}
@@ -280,7 +280,7 @@ body
 .links ul
 {
 	margin-top: 50px;
-	margin-left: 450px;
+	margin-left: 400px;
 	display: block;
 	font-size: 24px;
 	text-decoration: none;
@@ -339,4 +339,20 @@ body
 	margin-right: 30px;
 	text-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
 	color: #fff;
+}
+
+@media only screen and (max-width: 980px)
+{
+	.contact
+	{
+		margin-left: 60px;
+		margin-top: 600px;
+		width: 75%;
+	}
+
+	.links ul
+	{
+		margin-left: 60px;
+
+	}
 }

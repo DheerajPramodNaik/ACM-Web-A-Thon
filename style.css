@@ -10,10 +10,10 @@ header
     top: -2px;
     z-index: 1;
     padding: 15px;
-    border: 1px solid white;
     background-color: #4cf739;
     text-align: center;
     width: 100%;
+    box-shadow: 0 0 10px #00fc50, 0 0 40px #00fc50, 0 0 80px #00fc50;
 }
 
 body
@@ -257,13 +257,13 @@ body
 
 	.fa-instagram, .fa-linkedin, .fa-twitter
 	{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-left: 25px;
 	}
 
 	.fa-facebook
 	{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-left: 25px;
 	}
 

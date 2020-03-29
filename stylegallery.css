@@ -257,14 +257,15 @@ body
 	{
 		width: 34%;
 		z-index: 20;
-		top: 300px;
+		top: 200px;
 		position: absolute;
 		font-size: 12px;
 	}
 
 	.gallery img
 	{
-		top: 100px;
+		padding: 10px;
+		width: 50%;
 	}
 }
 
@@ -287,4 +288,18 @@ body
 {
 	filter: grayscale(100%);
 	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 980px)
+{
+	.gallery
+	{
+		margin-left: 50px;
+	}
+
+	.gallery img
+	{
+		padding: 10px;
+		width: 190px;
+	}
 }
